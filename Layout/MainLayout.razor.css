@@ -1,19 +1,15 @@
-/*.page {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}*/
-
 main {
     display: flex;
     flex: 1;
 }
 
 .sidebar {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background: #EEF7CC;
     overflow: auto;
+    position: fixed;
+    top: 100px;
 }
-
+/* from the example app, some could be reused
 .top-row {
     background-color: #f7f7f7;
     border-bottom: 1px solid #d6d5d5;
@@ -37,6 +33,23 @@ main {
         overflow: hidden;
         text-overflow: ellipsis;
     }
+    */
+
+header {
+    background: #002f5f;
+    height: 100px;
+    border-bottom: 5px solid #A5C03A;
+}
+
+    header * {
+        color: white;
+        font-family: CaeciliaeText-Bold, Georgia, Times, 'Times New Roman', serif;
+    }
+
+
+article {
+    margin-left: 250px;
+}
 
 @media (max-width: 640.98px) {
     .top-row {
@@ -49,15 +62,10 @@ main {
 }
 
 @media (min-width: 641px) {
-    /*.page {
-        flex-direction: row;
-    }*/
 
     .sidebar {
         width: 250px;
         height: 100vh;
-        /*position: sticky;
-        top: 0;*/
     }
 
     .top-row {
