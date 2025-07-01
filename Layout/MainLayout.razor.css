@@ -50,6 +50,9 @@ header {
 article {
     margin-left: 250px;
 }
+    article.content {
+        overflow: auto;
+    }
 
 @media (max-width: 640.98px) {
     .top-row {
