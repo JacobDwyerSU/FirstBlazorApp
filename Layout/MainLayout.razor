@@ -1,9 +1,21 @@
 ﻿@inherits LayoutComponentBase
 
 <header class="top-row px-4">
-    <h3>Stockholms universitetsbibliotek</h3>
-    <h1>Mitt bibliotek</h1>
-    <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+    <a href="https://www.su.se/stockholms-universitetsbibliotek/">
+        <img src="/images/SuLogo.svg" alt="Stockholms universitetslogotyp" />
+    </a>
+    <div id="header-content-container">
+        <div id="header-text">
+            <h3>Stockholms universitetsbibliotek</h3>
+            <h1>Mitt bibliotek</h1>
+        </div>
+
+        <div id="header-icons">
+            <MudIcon Icon="@Icons.Material.Filled.Person" id="header-profile" />
+            <MudIcon Icon="@Icons.Material.Filled.Menu" id="header-menu" />
+        </div>
+    </div>
+    
 </header>
 
 <div class="page">

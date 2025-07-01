@@ -43,11 +43,20 @@ header {
     background: #002f5f;
     height: 100px;
     border-bottom: 5px solid #A5C03A;
+    display: flex;
 }
 
     header * {
         color: white;
         font-family: CaeciliaeText-Bold, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    header img {
+        width: 200px;
+    }
+
+    header a {
+        display: contents;
     }
 
 
@@ -56,6 +65,20 @@ article {
 }
     article.content {
         overflow: auto;
+    }
+
+#header-content-container {
+    display: flex;
+    padding: 0 20px;
+    border-left: 1px solid white;
+    margin: 15px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+    #header-content-container #header-icons {
+        align-content: center;
+        margin-right: 50px;
     }
 
 @media (max-width: 640.98px) {
