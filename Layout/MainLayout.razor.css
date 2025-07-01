@@ -9,6 +9,10 @@ main {
     position: fixed;
     top: 100px;
 }
+
+aside.sidebar {
+    border-right: 4px solid lightgrey;
+}
 /* from the example app, some could be reused
 .top-row {
     background-color: #f7f7f7;
