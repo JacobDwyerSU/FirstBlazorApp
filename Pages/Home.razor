@@ -11,41 +11,29 @@
 
     <!-- foreach card -->
     <MudItem id="home-latest" xs="6">
-        <MudCard>
-            <MudCardHeader>
-                <CardHeaderContent>
-                    <MudIcon Icon="@Icons.Material.Filled.Newspaper" />
-                    <MudText Typo="Typo.h6">Senaste</MudText>
-                </CardHeaderContent>
-            </MudCardHeader>
-            <MudCardContent>
-                <MudList T="string">
-                    @foreach (String l in latest) 
-                    {
-                        <MudListItem Icon="@Icons.Material.Filled.ArrowForward" Text="@l"></MudListItem>
-                    }
-                </MudList>
-            </MudCardContent>
-        </MudCard>
+        <MudList T="string" Gutters="true" Padding="true">
+            <MudListSubheader Gutters="true">
+            <MudIcon Icon="@Icons.Material.Filled.Newspaper" />
+                Senaste
+            </MudListSubheader>
+            @foreach (String l in latest) 
+            {
+                <MudListItem Icon="@Icons.Material.Filled.ArrowForward" Text="@l"></MudListItem>
+            }
+        </MudList>
     </MudItem>
 
     <MudItem id="home-notifications" xs="6">
-        <MudCard>
-            <MudCardHeader>
-                <CardHeaderContent>
-                    <MudIcon Icon="@Icons.Material.Filled.Notifications" />
-                    <MudText Typo="Typo.h6">Mina Notiser</MudText>
-                </CardHeaderContent>
-            </MudCardHeader>
-            <MudCardContent>
-                <MudList T="string">
-                    @foreach (String notification in notifications)
-                    {
-                        <MudListItem Text="@notification"></MudListItem> // unlike "Senaste", icon could be bell, number ...
-                    }
-                </MudList>
-            </MudCardContent>
-        </MudCard>
+        <MudList T="string" Gutters="true" Padding="true">
+            <MudListSubheader Gutters="true">
+            <MudIcon Icon="@Icons.Material.Filled.Notifications" />
+                Mina Notiser
+            </MudListSubheader>
+            @foreach (String notification in notifications)
+            {
+                <MudListItem Text="@notification"></MudListItem> // unlike "Senaste", icon could be bell, number ...
+            }
+        </MudList>
     </MudItem>
 
     <MudItem xs="12">

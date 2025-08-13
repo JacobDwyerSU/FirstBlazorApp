@@ -141,21 +141,22 @@ code {
 }
 
 /* Home > Senaste */
+#home-latest > .mud-list {
+    border: 2px solid #EEF7CC;
+}
+
 #home-latest .mud-card-header {
     padding: 10px;
 }
 
-#home-latest .mud-card-header-content {
+#home-latest .mud-list-subheader {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
-    #home-latest .mud-card-header-content > .mud-icon-root {
-        margin-top: 3px;
-    }
-
-    #home-latest .mud-card-header-content > h6 {
-        margin-left: 10px;
+    #home-latest .mud-list-subheader > .mud-icon-root {
+        margin-right: 10px;
     }
 
 #home-latest .mud-card-content {
@@ -172,21 +173,22 @@ code {
     }
 
 /* Home > Notifications */
+#home-notifications > .mud-list {
+    border: 2px solid #EEF7CC;
+}
+
 #home-notifications .mud-card-header {
     padding: 10px;
 }
 
-#home-notifications .mud-card-header-content {
+#home-notifications .mud-list-subheader {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
-    #home-notifications .mud-card-header-content > .mud-icon-root {
-        margin-top: 3px;
-    }
-
-    #home-notifications .mud-card-header-content > h6 {
-        margin-left: 10px;
+    #home-notifications .mud-list-subheader > .mud-icon-root {
+        margin-right: 10px;
     }
 
 #home-notifications .mud-card-content {
