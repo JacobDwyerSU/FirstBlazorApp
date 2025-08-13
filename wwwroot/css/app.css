@@ -139,3 +139,35 @@ code {
 .mud-grid {
     max-height: calc(100vh - 100px);
 }
+
+/* Home > Senaste */
+#home-latest .mud-card-header {
+    padding: 10px;
+}
+
+#home-latest .mud-card-header-content {
+    display: flex;
+    flex-direction: row;
+}
+
+    #home-latest .mud-card-header-content > .mud-icon-root {
+        margin-top: 3px;
+    }
+
+    #home-latest .mud-card-header-content > h6 {
+        margin-left: 10px;
+    }
+
+#home-latest .mud-card-content {
+    padding: 0;
+}
+
+#home-latest .mud-list-item {
+    border-bottom: 2px solid #EEF7CC;
+    padding: 0;
+    margin: 2px 10px;
+}
+
+    #home-latest .mud-list-item:last-child {
+        border-bottom: none;
+    }

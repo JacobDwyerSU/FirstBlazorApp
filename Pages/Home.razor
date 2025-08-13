@@ -10,20 +10,21 @@
     </MudItem>
 
     <!-- foreach card -->
-    <MudItem xs="6">
+    <MudItem id="home-latest" xs="6">
         <MudCard>
             <MudCardHeader>
                 <CardHeaderContent>
-                    <MudText Typo="Typo.h6"><MudIcon Icon="@Icons.Material.Filled.Newspaper" />Senaste</MudText>
+                    <MudIcon Icon="@Icons.Material.Filled.Newspaper" />
+                    <MudText Typo="Typo.h6">Senaste</MudText>
                 </CardHeaderContent>
             </MudCardHeader>
             <MudCardContent>
-                <MudText>This day everything happened.</MudText>
-                <MudText Typo="Typo.body2">The quick, brown fox jumps over a lazy dog.</MudText>
+                <MudList T="string">
+                    @foreach (String l in latest) {
+                        <MudListItem Icon="@Icons.Material.Filled.ArrowForward" Text="@l"></MudListItem>
+                    }
+                </MudList>
             </MudCardContent>
-            <MudCardActions>
-                <MudButton Variant="Variant.Text" Color="Color.Primary">Read More</MudButton>
-            </MudCardActions>
         </MudCard>
     </MudItem>
 
@@ -134,6 +135,8 @@
 
 @code {
     private bool hideTalbokCard = false;
+    private List<String> latest = ["AI söktjänst Keenious", "Video: Förbättra dina sökord", "Video: Referenshanteringsprogram"]; // should be just a link?
+    private List<String> notifications = ["Böcker > påminnelse", "Lån av fjärrlån", "Magasin > beställningar"]; // consider making Notifications class including link, icon ...
 
     void toggleTalbok()
     {
