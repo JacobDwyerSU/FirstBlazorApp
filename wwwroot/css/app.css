@@ -207,4 +207,13 @@ code {
 /* Home > "Closables" */
 .closable-card-header {
     border-bottom: 2px solid #a3a86b;
+    padding: 0 !important;
+}
+
+.closable-card-header > .mud-card-header-content {
+    margin-left: 12px !important;
+}
+
+.closable-card-header > .mud-card-header-actions {
+    margin: auto !important;
 }
