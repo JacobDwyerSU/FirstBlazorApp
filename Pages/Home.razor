@@ -13,7 +13,7 @@
     <MudItem id="home-latest" xs="6">
         <MudList T="string" Gutters="true" Padding="true">
             <MudListSubheader Gutters="true">
-            <MudIcon Icon="@Icons.Material.Filled.Newspaper" />
+                <MudIcon Icon="@Icons.Material.Filled.Newspaper" Style="color: #a3a86b" />
                 Senaste
             </MudListSubheader>
             @foreach (String l in latest) 
@@ -26,7 +26,7 @@
     <MudItem id="home-notifications" xs="6">
         <MudList T="string" Gutters="true" Padding="true">
             <MudListSubheader Gutters="true">
-            <MudIcon Icon="@Icons.Material.Filled.Notifications" />
+                <MudIcon Icon="@Icons.Material.Filled.Notifications" Style="color: #ff6634" />
                 Mina Notiser
             </MudListSubheader>
             @foreach (String notification in notifications)
@@ -37,24 +37,24 @@
     </MudItem>
 
     <MudItem xs="12">
-        <MudPaper Class="pa-4" Outlined="true">
+        <MudPaper Style="background-color: #f6f6f1" Class="pa-4" Outlined="true">
             
-            <h1><MudIcon Icon="@Icons.Material.Filled.Apps" />Skapa ett "Mitt bibliotek konto"</h1>
+            <h1><MudIcon Icon="@Icons.Material.Filled.Apps" Style="color: #a3a86b" />Skapa ett "Mitt bibliotek konto"</h1>
             <p class="pa-4">Med ett konto kan du göra ditt och datt... , consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero.</p>
             <div class="paper-card-actions">
-                <MudButton Variant="Variant.Outlined" Color="Color.Default">Skapa din pinkod</MudButton>
+                <MudButton Variant="Variant.Outlined" Color="Color.Default" Style="background-color: white">Skapa din pinkod</MudButton>
             </div>
         </MudPaper>
     </MudItem>
 
-    <MudItem xs="6" class="@(hideTalbokCard? "hidden" : "")">
-        <MudCard>
-            <MudCardHeader>
+    <MudItem xs="6" class="@(hideTalbokCard ? "hidden" : "")">
+        <MudCard Style="background-color: #f6f6f1">
+            <MudCardHeader class="closable-card-header">
                 <CardHeaderContent>
-                    <MudText Typo="Typo.h6"><MudIconButton Icon="@Icons.Material.Filled.HearingDisabled" Color="Color.Default" />För dig som har funktionsnedsättning: Talböcker</MudText>
+                    <MudText Typo="Typo.h6"><MudIconButton Icon="@Icons.Material.Filled.HearingDisabled" Style="color: #a3a86b" />För dig som har funktionsnedsättning: Talböcker</MudText>
                 </CardHeaderContent>
                 <CardHeaderActions>
-                    <MudIconButton OnClick="toggleTalbok" Icon="@Icons.Material.Filled.Close" Color="Color.Default" />
+                    <MudIconButton OnClick="toggleTalbok" Icon="@Icons.Material.Filled.Close" Style="color: #a3a86b" />
                 </CardHeaderActions>
             </MudCardHeader>
             <MudCardContent>
@@ -62,19 +62,19 @@
                 <MudText Typo="Typo.body2">The quick, brown fox jumps over a lazy dog.</MudText>
             </MudCardContent>
             <MudCardActions>
-                <MudButton Variant="Variant.Outlined" Color="Color.Default">Boka ett möte</MudButton>
+                <MudButton Variant="Variant.Outlined" Color="Color.Default" Style="background-color: white">Boka ett möte</MudButton>
             </MudCardActions>
         </MudCard>
     </MudItem>
 
     <MudItem xs="6">
-        <MudCard>
-            <MudCardHeader>
+        <MudCard Style="background-color: #f6f6f1">
+            <MudCardHeader class="closable-card-header">
                 <CardHeaderContent>
-                    <MudText Typo="Typo.h6"><MudIconButton Icon="@Icons.Material.Filled.AdsClick" Color="Color.Default" />Boka ett möte för sökhandledning</MudText>
+                    <MudText Typo="Typo.h6"><MudIconButton Icon="@Icons.Material.Filled.AdsClick" Style="color: #a3a86b" />Boka ett möte för sökhandledning</MudText>
                 </CardHeaderContent>
                 <CardHeaderActions>
-                    <MudIconButton Icon="@Icons.Material.Filled.Close" Color="Color.Default" />
+                    <MudIconButton Icon="@Icons.Material.Filled.Close" Style="color: #a3a86b" />
                 </CardHeaderActions>
             </MudCardHeader>
             <MudCardContent>
@@ -82,19 +82,19 @@
                 <MudText Typo="Typo.body2">The quick, brown fox jumps over a lazy dog.</MudText>
             </MudCardContent>
             <MudCardActions>
-                <MudButton Variant="Variant.Outlined" Color="Color.Default">Boka ett möte</MudButton>
+                <MudButton Variant="Variant.Outlined" Color="Color.Default" Style="background-color: white">Boka ett möte</MudButton>
             </MudCardActions>
         </MudCard>
     </MudItem>
 
     <MudItem xs="6">
-        <MudCard>
-            <MudCardHeader>
+        <MudCard Style="background-color: #f6f6f1">
+            <MudCardHeader class="closable-card-header">
                 <CardHeaderContent>
-                    <MudText Typo="Typo.h6"><MudIconButton Icon="@Icons.Material.Filled.Print" Color="Color.Default" />Skriva ut</MudText>
+                    <MudText Typo="Typo.h6"><MudIconButton Icon="@Icons.Material.Filled.Print" Style="color: #a3a86b" />Skriva ut</MudText>
                 </CardHeaderContent>
                 <CardHeaderActions>
-                    <MudIconButton Icon="@Icons.Material.Filled.Close" Color="Color.Default" />
+                    <MudIconButton Icon="@Icons.Material.Filled.Close" Style="color: #a3a86b" />
                 </CardHeaderActions>
             </MudCardHeader>
             <MudCardContent>
@@ -102,22 +102,22 @@
                 <MudText Typo="Typo.body2">The quick, brown fox jumps over a lazy dog.</MudText>
             </MudCardContent>
             <MudCardActions>
-                <MudButton Variant="Variant.Outlined" Color="Color.Default">Ladda mitt kort</MudButton>
+                <MudButton Variant="Variant.Outlined" Color="Color.Default" Style="background-color: white">Ladda mitt kort</MudButton>
             </MudCardActions>
         </MudCard>
     </MudItem>
 
     <MudItem xs="6">
-        <MudCard>
+        <MudCard Style="background-color: #f6f6f1">
             <MudCardHeader>
                 <CardHeaderContent>
-                    <MudText Typo="Typo.h6"><MudIconButton Icon="@Icons.Material.Filled.QuestionAnswer" Color="Color.Default" />HUR GÖR JAG</MudText>
+                    <MudText Typo="Typo.h6"><MudIconButton Icon="@Icons.Material.Filled.QuestionAnswer" Style="color: #a3a86b" />HUR GÖR JAG</MudText>
                 </CardHeaderContent>
             </MudCardHeader>
             <MudCardActions>
-                <MudButton Variant="Variant.Outlined" Color="Color.Default" FullWidth="true">Hur gör jag med handledning?</MudButton>
-                <MudButton Variant="Variant.Outlined" Color="Color.Default" FullWidth="true">Hur kan jag beställa böcker?</MudButton>
-                <MudButton Variant="Variant.Outlined" Color="Color.Default" FullWidth="true">Hur kan jag hyra en vagn eller hyra ett skåp?</MudButton>
+                <MudButton Variant="Variant.Outlined" Color="Color.Default" FullWidth="true" Style="background-color: white">Hur gör jag med handledning?</MudButton>
+                <MudButton Variant="Variant.Outlined" Color="Color.Default" FullWidth="true" Style="background-color: white">Hur kan jag beställa böcker?</MudButton>
+                <MudButton Variant="Variant.Outlined" Color="Color.Default" FullWidth="true" Style="background-color: white">Hur kan jag hyra en vagn eller hyra ett skåp?</MudButton>
             </MudCardActions>
         </MudCard>
     </MudItem>

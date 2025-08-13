@@ -4,7 +4,7 @@ main {
 }
 
 .sidebar {
-    background: #EEF7CC;
+    background: #edeee1;
     overflow: auto;
     position: fixed;
     top: 100px;
@@ -42,7 +42,7 @@ aside.sidebar {
 header {
     background: #002f5f;
     height: 100px;
-    border-bottom: 5px solid #A5C03A;
+    border-bottom: 5px solid #a3a86b;
     display: flex;
 }
 

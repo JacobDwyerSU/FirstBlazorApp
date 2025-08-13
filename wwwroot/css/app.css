@@ -142,7 +142,7 @@ code {
 
 /* Home > Senaste */
 #home-latest > .mud-list {
-    border: 2px solid #EEF7CC;
+    border: 2px solid #edeee1;
 }
 
 #home-latest .mud-card-header {
@@ -164,7 +164,7 @@ code {
 }
 
 #home-latest .mud-list-item {
-    border-bottom: 2px solid #EEF7CC;
+    border-bottom: 2px solid #edeee1;
     padding: 2px 10px;
 }
 
@@ -174,7 +174,7 @@ code {
 
 /* Home > Notifications */
 #home-notifications > .mud-list {
-    border: 2px solid #EEF7CC;
+    border: 2px solid #edeee1;
 }
 
 #home-notifications .mud-card-header {
@@ -196,10 +196,15 @@ code {
 }
 
 #home-notifications .mud-list-item {
-    border-bottom: 2px solid #EEF7CC;
+    border-bottom: 2px solid #edeee1;
     padding: 2px 10px;
 }
 
     #home-notifications .mud-list-item:last-child {
         border-bottom: none;
     }
+
+/* Home > "Closables" */
+.closable-card-header {
+    border-bottom: 2px solid #a3a86b;
+}
