@@ -139,8 +139,3 @@ code {
 .mud-grid {
     max-height: calc(100vh - 100px);
 }
-
-.sidebar-item-divider {
-    background-color: #EEF7CC;
-    height: 24px;
-}
