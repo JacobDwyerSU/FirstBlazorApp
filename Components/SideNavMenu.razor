@@ -1,87 +1,42 @@
 ﻿<MudPaper id="side-nav-menu" style="overflow:auto;">
     <MudList T="string">
-        <MudListItem Icon="@Icons.Material.Filled.Inbox" Text="Hjälp" @bind-Expanded="_hjalpExpanded">
+        <MudListItem Icon="@Icons.Material.Filled.HelpOutline" Text="Hjälp" @bind-Expanded="_hjalpExpanded"></MudListItem>
+        <div class="sidebar-item-divider"></div>
+        <MudListItem Icon="@Icons.Material.Filled.Book" Text="Mina lån" @bind-Expanded="_minaLanExpanded">
             <NestedList>
-                <MudListItem Icon="@Icons.Material.Filled.StarRate">
-                    Starred
-                </MudListItem>
-                <MudListItem Icon="@Icons.Material.Filled.WatchLater">
-                    Snoozed
-                </MudListItem>
+                <MudListItem href="/mina-lan">Mina lån</MudListItem>
+                <MudListItem href="/">Home</MudListItem>
             </NestedList>
         </MudListItem>
         <div class="sidebar-item-divider"></div>
-        <MudListItem Icon="@Icons.Material.Filled.Send" Text="Mina lån" @bind-Expanded="_minaLanExpanded">
+        <MudListItem Icon="@Icons.Material.Filled.Devices" Text="Digitala böcker" @bind-Expanded="_digiExpanded"></MudListItem>
+        <div class="sidebar-item-divider"></div>
+        <MudListItem Icon="@Icons.Material.Filled.LibraryBooks" Text="Inköp/fjärrlån" @bind-Expanded="_fjarrExpanded">
             <NestedList>
-                <MudListItem href="/mina-lan">
-                    Re: Meeting tomorrow
-                </MudListItem>
-                <MudListItem href="/">Fwd: JavaScript memes xD</MudListItem>
+                <MudListItem>Beställ</MudListItem>
+                <MudListItem>Ge förslag</MudListItem>
+                <MudListItem>Fjärrlån</MudListItem>
             </NestedList>
         </MudListItem>
         <div class="sidebar-item-divider"></div>
-        <MudListItem Icon="@Icons.Material.Filled.Drafts" Text="Digitala böcker" @bind-Expanded="_digiExpanded">
+        <MudListItem Icon="@Icons.Material.Filled.Newspaper" Text="Magasin" @bind-Expanded="_magExpanded">
             <NestedList>
-                <MudListItem>Re: Meeting tomorrow</MudListItem>
-                <MudListItem>Fwd: JavaScript memes xD</MudListItem>
+                <MudListItem>Beställ från Magasin</MudListItem>
+                <MudListItem>Mina beställningar</MudListItem>
             </NestedList>
         </MudListItem>
         <div class="sidebar-item-divider"></div>
-        <MudListItem Icon="@Icons.Material.Filled.Send" Text="Inköp/fjärrlån" @bind-Expanded="_fjarrExpanded">
-            <NestedList>
-                <MudListItem>Re: Meeting tomorrow</MudListItem>
-                <MudListItem>Fwd: JavaScript memes xD</MudListItem>
-            </NestedList>
-        </MudListItem>
+        <MudListItem Icon="@Icons.Material.Filled.Groups" Text="Boka grupprum" @bind-Expanded="_grupprumExpanded"></MudListItem>
         <div class="sidebar-item-divider"></div>
-        <MudListItem Icon="@Icons.Material.Filled.Send" Text="Magasin" @bind-Expanded="_magExpanded">
-            <NestedList>
-                <MudListItem>Re: Meeting tomorrow</MudListItem>
-                <MudListItem>Fwd: JavaScript memes xD</MudListItem>
-            </NestedList>
-        </MudListItem>
+        <MudListItem Icon="@Icons.Material.Filled.Dns" Text="Hyr ett skåp" @bind-Expanded="_skapExpanded"></MudListItem>
         <div class="sidebar-item-divider"></div>
-        <MudListItem Icon="@Icons.Material.Filled.Send" Text="Boka grupprum" @bind-Expanded="_grupprumExpanded">
-            <NestedList>
-                <MudListItem>Re: Meeting tomorrow</MudListItem>
-                <MudListItem>Fwd: JavaScript memes xD</MudListItem>
-            </NestedList>
-        </MudListItem>
+        <MudListItem Icon="@Icons.Material.Filled.Send" Text="Hyr en vagn" @bind-Expanded="_vagnExpanded"></MudListItem>
         <div class="sidebar-item-divider"></div>
-        <MudListItem Icon="@Icons.Material.Filled.Send" Text="Hyr ett skåp" @bind-Expanded="_skapExpanded">
-            <NestedList>
-                <MudListItem>Re: Meeting tomorrow</MudListItem>
-                <MudListItem>Fwd: JavaScript memes xD</MudListItem>
-            </NestedList>
-        </MudListItem>
+        <MudListItem Icon="@Icons.Material.Filled.Print" Text="Skriv ut" @bind-Expanded="_printExpanded"></MudListItem>
         <div class="sidebar-item-divider"></div>
-        <MudListItem Icon="@Icons.Material.Filled.Send" Text="Hyr en vagn" @bind-Expanded="_vagnExpanded">
-            <NestedList>
-                <MudListItem>Re: Meeting tomorrow</MudListItem>
-                <MudListItem>Fwd: JavaScript memes xD</MudListItem>
-            </NestedList>
-        </MudListItem>
+        <MudListItem Icon="@Icons.Material.Filled.Hearing" Text="Talböcker" @bind-Expanded="_talnockExpanded"></MudListItem>
         <div class="sidebar-item-divider"></div>
-        <MudListItem Icon="@Icons.Material.Filled.Send" Text="Skriv ut" @bind-Expanded="_printExpanded">
-            <NestedList>
-                <MudListItem>Re: Meeting tomorrow</MudListItem>
-                <MudListItem>Fwd: JavaScript memes xD</MudListItem>
-            </NestedList>
-        </MudListItem>
-        <div class="sidebar-item-divider"></div>
-        <MudListItem Icon="@Icons.Material.Filled.Send" Text="Talböcker" @bind-Expanded="_talnockExpanded">
-            <NestedList>
-                <MudListItem>Re: Meeting tomorrow</MudListItem>
-                <MudListItem>Fwd: JavaScript memes xD</MudListItem>
-            </NestedList>
-        </MudListItem>
-        <div class="sidebar-item-divider"></div>
-        <MudListItem Icon="@Icons.Material.Filled.Send" Text="Sökhandledning" @bind-Expanded="_sokhandlExpanded">
-            <NestedList>
-                <MudListItem>Re: Meeting tomorrow</MudListItem>
-                <MudListItem>Fwd: JavaScript memes xD</MudListItem>
-            </NestedList>
-        </MudListItem>
+        <MudListItem Icon="@Icons.Material.Filled.AdsClick" Text="Sökhandledning" @bind-Expanded="_sokhandlExpanded"></MudListItem>
     </MudList>
 </MudPaper>
 @code {
