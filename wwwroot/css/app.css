@@ -159,15 +159,45 @@ code {
     }
 
 #home-latest .mud-card-content {
-    padding: 0;
+    padding: 0 10px;
 }
 
 #home-latest .mud-list-item {
     border-bottom: 2px solid #EEF7CC;
-    padding: 0;
-    margin: 2px 10px;
+    padding: 2px 10px;
 }
 
     #home-latest .mud-list-item:last-child {
+        border-bottom: none;
+    }
+
+/* Home > Notifications */
+#home-notifications .mud-card-header {
+    padding: 10px;
+}
+
+#home-notifications .mud-card-header-content {
+    display: flex;
+    flex-direction: row;
+}
+
+    #home-notifications .mud-card-header-content > .mud-icon-root {
+        margin-top: 3px;
+    }
+
+    #home-notifications .mud-card-header-content > h6 {
+        margin-left: 10px;
+    }
+
+#home-notifications .mud-card-content {
+    padding: 0 10px;
+}
+
+#home-notifications .mud-list-item {
+    border-bottom: 2px solid #EEF7CC;
+    padding: 2px 10px;
+}
+
+    #home-notifications .mud-list-item:last-child {
         border-bottom: none;
     }

@@ -20,7 +20,8 @@
             </MudCardHeader>
             <MudCardContent>
                 <MudList T="string">
-                    @foreach (String l in latest) {
+                    @foreach (String l in latest) 
+                    {
                         <MudListItem Icon="@Icons.Material.Filled.ArrowForward" Text="@l"></MudListItem>
                     }
                 </MudList>
@@ -28,20 +29,22 @@
         </MudCard>
     </MudItem>
 
-    <MudItem xs="6">
+    <MudItem id="home-notifications" xs="6">
         <MudCard>
             <MudCardHeader>
                 <CardHeaderContent>
-                    <MudText Typo="Typo.h6"><MudIcon Icon="@Icons.Material.Filled.Notifications" />Mina Notiser</MudText>
+                    <MudIcon Icon="@Icons.Material.Filled.Notifications" />
+                    <MudText Typo="Typo.h6">Mina Notiser</MudText>
                 </CardHeaderContent>
             </MudCardHeader>
             <MudCardContent>
-                <MudText>This day everything happened.</MudText>
-                <MudText Typo="Typo.body2">The quick, brown fox jumps over a lazy dog.</MudText>
+                <MudList T="string">
+                    @foreach (String notification in notifications)
+                    {
+                        <MudListItem Text="@notification"></MudListItem> // unlike "Senaste", icon could be bell, number ...
+                    }
+                </MudList>
             </MudCardContent>
-            <MudCardActions>
-                <MudButton Variant="Variant.Text" Color="Color.Primary">Read More</MudButton>
-            </MudCardActions>
         </MudCard>
     </MudItem>
 
