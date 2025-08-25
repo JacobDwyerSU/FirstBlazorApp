@@ -5,3 +5,22 @@
     padding-right: 0 !important;
     min-width: 300px;
 }
+
+#search-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+    #search-buttons > * {
+        font-size: 11px;
+    }
+
+#source-buttons {
+    columns: 2;
+    column-rule: 2px dotted #a3a86b;
+}
+
+    .source-link {
+        font-size: 11px !important;
+    }

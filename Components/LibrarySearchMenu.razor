@@ -11,15 +11,33 @@
         <MudText>Sök bibliotekets böcker och tidskrifter i LIBRIS eller artiklar inkl. e-böcker med mera. Välj filter nedan:</MudText>
 
     </MudCardContent>
-    <MudCardActions>
+    <MudCardActions id="search-buttons">
         <MudButton Variant="Variant.Outlined" StartIcon="@Icons.Material.Filled.Check" Color="Color.Default" Style="background-color: white">Böcker och tidskrifter</MudButton>
-    </MudCardActions>
-    <MudCardActions>
         <MudButton Variant="Variant.Outlined" Color="Color.Default" Style="background-color: white">Artiklar</MudButton>
     </MudCardActions>
+    <MudCardActions>
+        <MudTextField @bind-Value="Search" Variant="Variant.Outlined" Adornment="Adornment.End" AdornmentIcon="@Icons.Material.Filled.Search" AdornmentColor="Color.Primary" Style="background-color: white" />
+    </MudCardActions>
+    <MudCardContent>
+        <MudText>Du kan även söka från våra andra källor:</MudText>
 
+        <div id="source-buttons">
+            <MudCardActions>
+                <MudButton class="source-link" Variant="Variant.Outlined" Color="Color.Default" Style="background-color: white">Databaser A-Ö</MudButton>
+                <MudText>SU Bibliotek Databas sök, som går igenom...</MudText>
+                <MudButton class="source-link" Variant="Variant.Outlined" Color="Color.Default" Style="background-color: white">E-böcker A-Ö</MudButton>
+                <MudText>SU Bibliotek E-böcker sök, som går igenom...</MudText>
+                <MudButton class="source-link" Variant="Variant.Outlined" Color="Color.Default" Style="background-color: white">All Keenious</MudButton>
+                <MudText>Keenious är ett sökverktyg som hjälper dig att hitta relevanta vetenskapliga artiklar</MudText>
+                <MudButton class="source-link" Variant="Variant.Outlined" Color="Color.Default" Style="background-color: white">E-tidskrifter A-Ö</MudButton>
+                <MudText>SU Bibliotek E-tidskrifter sök, som går igenom...</MudText>
+                <MudButton class="source-link" Variant="Variant.Outlined" Color="Color.Default" Style="background-color: white">Google Scholar</MudButton>
+                <MudText>SU Bibliotek E-böcker sök, som går igenom...</MudText>
+            </MudCardActions>
+        </div>
+    </MudCardContent>
 </MudCard>
 
 @code {
-
+    public string Search { get; set; }
 }
